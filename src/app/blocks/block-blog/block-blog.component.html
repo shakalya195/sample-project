@@ -1,13 +1,12 @@
-<div class="blogDesc">
+<div *ngIf="post" class="blogDesc">
   <div class="thumbImage">
-    <div class="buyNow"><button class="btn btn-green">Buy Now</button></div>
-    <div class="price">$7.50 / ton </div>
-    <div class="name">KARIBA REDD+- ZIMBABWE</div>
+    <div *ngIf="post?.sale" class="buyNow"><button class="btn btn-green">Buy Now</button></div>
+    <div *ngIf="post?.sale" class="price">${{post?.price}} / {{post?.price_unit}} </div>
+    <div class="name">{{post?.location}}</div>
   </div>
   <div class="thumbDesc">
-    <h2>Reduced Emissions from deforestation</h2>
-    <h3>957,842 lbs offset</h3>
-    <p>Protects forests and wildlife on the southern shores of Lake Kariba in Zimbabwe, forming a
-      giant biodiversity corridor. </p>
+    <h2>{{post?.title}}</h2>
+    <h3 *ngIf="post?.offset">{{post?.offset}} {{post?.offset_unit}} offset</h3>
+    <p>{{post?.description}} </p>
   </div>
 </div>

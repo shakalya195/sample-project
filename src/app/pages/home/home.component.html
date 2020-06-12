@@ -1,8 +1,5 @@
 <div class="home">
   <div class="container blogs-container">
-    <div class="block-blog"><app-block-blog></app-block-blog></div>
-    <div class="block-blog"><app-block-blog></app-block-blog></div>
-    <div class="block-blog"><app-block-blog></app-block-blog></div>
-    <div class="block-blog"><app-block-blog></app-block-blog></div>
+    <div *ngFor="let post of posts" class="block-blog"><app-block-blog [post]='post'></app-block-blog></div>
   </div>
 </div>
