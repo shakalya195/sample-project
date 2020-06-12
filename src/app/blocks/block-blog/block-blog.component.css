@@ -1,0 +1,86 @@
+.blogDesc{
+    margin: 0 0 20px;
+}
+.blogDesc .thumbImage{
+    width: 100%;
+    position: relative;
+    background-image: url('/assets/Tile_Image.jpg');
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.blogDesc .thumbImage .buyNow{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-green {
+    background-color: #058b34;
+    border-color: #058b34;
+    color: #fff;
+}
+
+.blogDesc .thumbImage .price {
+    position: absolute;
+    right: 10px;
+    top: 55px;
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.blogDesc .thumbImage .name {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.blogDesc .thumbDesc {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.blogDesc .thumbDesc h2 {
+    font-size: 17px;
+    color: #d7326a;
+    font-weight: 700;
+}
+.blogDesc .thumbDesc h3 {
+    font-size: 16px;
+    color: #12bd4a;
+    font-weight: 700;
+}
+.blogDesc .thumbDesc p {
+    font-size: 14px;
+    margin: 0;
+    color: #474747;
+}
